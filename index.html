@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイエンスアカデミー(SA)コース | 昭和学院高等学校</title>
+    <style>
+        /* 理系的・先進的デザイン */
+        :root { --primary: #003366; --accent: #00aaff; --bg: #f4f7f6; }
+        body { font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; color: #333; background: var(--bg); line-height: 1.8; }
+        
+        header { background: var(--primary); color: white; padding: 20px; text-align: center; border-bottom: 5px solid var(--accent); }
+        h1 { margin: 0; font-size: 24px; letter-spacing: 2px; }
+        
+        .hero { 
+            background: linear-gradient(135deg, #001133 0%, #003366 100%); 
+            color: white; padding: 80px 20px; text-align: center; 
+            margin-bottom: 40px; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 60px; font-size: 1.8em; }
+        
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .feature-box { 
+            background: white; padding: 30px; border-radius: 4px; 
+            border-top: 3px solid var(--primary); box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+        }
+        
+        .btn { 
+            display: inline-block; background: var(--accent); color: white; 
+            padding: 12px 30px; text-decoration: none; border-radius: 50px; 
+            font-weight: bold; transition: 0.3s; margin-top: 20px;
+        }
+        .btn:hover { background: var(--primary); transform: translateY(-2px); }
+        
+        footer { background: #1a1a1a; color: #888; text-align: center; padding: 40px 20px; margin-top: 80px; }
+    </style>
+</head>
+<body>
+
+    <!-- ▼▼▼ 【Aさん担当: コンセプト＆デザイン】 ▼▼▼ -->
+    <header>
+        <h1>SHOWA GAKUIN : SA Course</h1>
+        <p>Science Academy - 君の「知りたい」が未来をつくる</p>
+    </header>
+
+    <div class="hero">
+        <!-- ここにAIと考えた「理系キッズに刺さる」キャッチコピーを入れる -->
+        <h2 style="border:none; color:white; font-size: 2.5em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">（キャッチコピー未定）</h2>
+        <p style="font-size: 1.2em;">（ここにSAコースのワクワク感を伝えるリード文を入れる）</p>
+        <a href="#" class="btn">Curriculum Guide</a>
+    </div>
+    <!-- ▲▲▲ Aさんエリアここまで ▲▲▲ -->
+
+    <div class="container">
+
+        <!-- ▼▼▼ 【Bさん担当: 研究活動（Project Research）】 ▼▼▼ -->
+        <section>
+            <h2>研究活動 (Project Research)</h2>
+            <p>（AIに「自分の好きなことをとことん研究できる」楽しさを書かせる）</p>
+
+            <div class="grid-2">
+                <div class="feature-box">
+                    <h3>SAコースの多様な研究フィールド</h3>
+                    <p>（AIに「風力発電」「発生学」「地球環境科学」「動物行動学」「音響工学」「食品化学」「理論物理学」「植物遺伝学」「細胞生物学」の全分野を、小学生にもわかるように紹介させる）</p>
+                </div>
+                <div class="feature-box">
+                    <h3>【体験】あなた向きの研究テーマ診断（動的コンテンツ）</h3>
+                    <p>JavaScriptで「好きな教科」や「興味」を選ぶと、おすすめの研究テーマが表示される診断アプリを実装！</p>
+                    <div id="research-diagnosis-area" style="text-align:center;">
+                        <button class="btn" onclick="alert('ここに診断アプリを実装します！')">診断スタート！</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ Bさんエリアここまで ▲▲▲ -->
+
+        <!-- ▼▼▼ 【Cさん担当: 情報創造 (Creative Coding)】 ▼▼▼ -->
+        <section>
+            <h2>情報創造 (Creative Coding)</h2>
+            <p>（AIに「プログラミングは現代の魔法である」ということを書かせる）</p>
+
+            <div class="grid-2">
+                <div class="feature-box">
+                    <h3>データサイエンスで未来を予測</h3>
+                    <p>（AIに「データを使ってコンビニの売上を予測する」などの具体例を書かせる）</p>
+                </div>
+                <div class="feature-box">
+                    <h3>【体験】デジタルアート生成（動的コンテンツ）</h3>
+                    <p>JavaScriptで「クリックするたびに美しい幾何学模様が描かれる」アート作品を実装！</p>
+                    <div id="generative-art-area" style="text-align:center;">
+                        <button class="btn" onclick="alert('ここにアート作品を実装します！')">アートを描く！</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ Cさんエリアここまで ▲▲▲ -->
+
+    </div>
+
+    <!-- ▼▼▼ 【Cさん担当: フッター】 ▼▼▼ -->
+    <footer>
+        <p>&copy; 2024 Showa Gakuin High School - SA Course Project</p>
+    </footer>
+    <!-- ▲▲▲ Cさんエリアここまで ▲▲▲ -->
+
+</body>
+</html>
